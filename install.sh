@@ -5,7 +5,7 @@ rm -rf build
 rm -rf result
 
 mkdir videos
-ln -s ~/Jeff/data/download/*.mp4 videos/
+ln -s ~/data/download/*.mp4 videos/
 
 mkdir build
 cd build
