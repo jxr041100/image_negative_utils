@@ -41,7 +41,7 @@ int main( int argc, const char** argv )
           cap >> frame;
           frame_no++;
 
-          if(frame_no>1000) break;
+          //if(frame_no>1000) break;
 
           if(frame_no%10!=0) continue;
           int width = frame.cols;
