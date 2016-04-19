@@ -1,1 +1,0 @@
-opencv_traincascade -data trained_result -vec vecOpenCVFace15x15.vec -bg non_car.dat -numPos 150000 -numNeg 1000000 -numStages 14 -precalcValBufSize 15360 -precalcIdxBufSize 15360 -stageType BOOST -featureType LBP -w 20 -h 20 -bt GAB -minHitRate 0.999 -maxFalseAlarmRate 0.2 -weightTrimRate 0.95 -maxDepth 1 -maxWeakCount 500
