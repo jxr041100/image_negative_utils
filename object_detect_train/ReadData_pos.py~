@@ -1,11 +1,17 @@
 import os
 import re
+#mport imghdr
+#import struct
 
+import Image
 from subprocess import call
-inputpath = '/home/jeff/data/car/neg'
-filename_prefix ='non_car'
+inputpath = '/home/jeff/data/car/pos'
+filename_prefix ='car'
 
-
+def get_image_size(fname):
+	IM=Image.open(fname)
+	width,height=IM.size
+	return width, height
 
 alist_filter = ['jpg','bmp','png']
 
@@ -17,9 +23,11 @@ for dirpath, dirs, files in os.walk(inputpath):
 			fullpath = os.path.join(dirpath,filename) 
 			print "full path" +fullpath
 
-			printstr = fullpath			
+			printstr = fullpath
+			w, h = get_image_size(fullpath)
 			printstr += '\n'
 			#write to the info file
 			print printstr			
-			f.write(printstr)			
+			f.write(printstr)
+	#close the file			
 f.close()
