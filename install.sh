@@ -4,18 +4,20 @@ rm -rf videos
 rm -rf build
 rm -rf result
 
-mkdir videos
-ln -s ~/data/download/*.mp4 videos/
+#mkdir videos
+#ln -s ~/data/negative/ videos/
+
+
 
 mkdir build
 cd build
 cmake ..
 make 
 
-ls ../videos/*.mp4 > ../videos/videos.txt
+find /home/jeff/data/ -type f -name "*.jpg" > files.txt
 ./image_negative_util
 cd ..
 
-mkdir result
-mv ./videos/*.jpg ./result/ 
+#mkdir result
+#mv  -r ./videos/*.jpg ./result/ 
 

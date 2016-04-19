@@ -19,9 +19,9 @@ using namespace cv;
 int main( int argc, const char** argv )
 {
   
-
   Mat frame;
   RNG rng(0xFFFFFFF);
+#ifdef VIDEO
   const char* listname = "../videos/videos.txt"; 
   std::ifstream in(listname);
   string filename; 
@@ -63,6 +63,39 @@ int main( int argc, const char** argv )
     }
     in >> filename;
   }
+  #else
+
+   const char* listname = "files.txt"; 
+   std::ifstream in(listname);
+   string filename; 
+   in >> filename;
+
+   while(in.good())
+   {
+      frame = imread(filename.c_str());
+      cout << "processing image " << filename.c_str() <<endl;      
+      int width = frame.cols;
+      int height = frame.rows;
+      int frame_number = 0;
+      //extract patches
+      for(int patch = 0; patch<10;patch++) 
+      {          
+         int x = rng.uniform(0,width);
+         int y = rng.uniform(0,height);
+         int roi_width = width/4;
+         int roi_height = width/4;
+         if(x+roi_width>=width || y+roi_height>=height) continue;
+         Rect roi = Rect(x,y,roi_width,roi_height);
+         Mat frame_roi = frame(roi);
+         string outfilename = filename.substr(0,filename.length()-1-3) + to_string(frame_number++) + "_out.jpg";
+         cout << outfilename << endl;
+         imwrite(outfilename,frame_roi);
+      }
+      //int c = waitKey(10);
+      //if( (char)c == 'c' ) { break; } 
+      in >> filename;
+   }
+   #endif
 
   return 1;
 }
