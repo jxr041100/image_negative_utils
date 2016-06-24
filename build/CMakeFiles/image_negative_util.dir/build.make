@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jeff/Jeff/Image_Negative
+CMAKE_SOURCE_DIR = /home/goddess/workspace/image_negative
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jeff/Jeff/Image_Negative/build
+CMAKE_BINARY_DIR = /home/goddess/workspace/image_negative/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/image_negative_util.dir/depend.make
@@ -54,17 +54,17 @@ include CMakeFiles/image_negative_util.dir/flags.make
 
 CMakeFiles/image_negative_util.dir/main.cpp.o: CMakeFiles/image_negative_util.dir/flags.make
 CMakeFiles/image_negative_util.dir/main.cpp.o: ../main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeff/Jeff/Image_Negative/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/goddess/workspace/image_negative/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/image_negative_util.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/image_negative_util.dir/main.cpp.o -c /home/jeff/Jeff/Image_Negative/main.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/image_negative_util.dir/main.cpp.o -c /home/goddess/workspace/image_negative/main.cpp
 
 CMakeFiles/image_negative_util.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_negative_util.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeff/Jeff/Image_Negative/main.cpp > CMakeFiles/image_negative_util.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/goddess/workspace/image_negative/main.cpp > CMakeFiles/image_negative_util.dir/main.cpp.i
 
 CMakeFiles/image_negative_util.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_negative_util.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeff/Jeff/Image_Negative/main.cpp -o CMakeFiles/image_negative_util.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/goddess/workspace/image_negative/main.cpp -o CMakeFiles/image_negative_util.dir/main.cpp.s
 
 CMakeFiles/image_negative_util.dir/main.cpp.o.requires:
 .PHONY : CMakeFiles/image_negative_util.dir/main.cpp.o.requires
@@ -97,7 +97,6 @@ image_negative_util: /usr/local/lib/libopencv_ml.so.2.4.11
 image_negative_util: /usr/local/lib/libopencv_legacy.so.2.4.11
 image_negative_util: /usr/local/lib/libopencv_imgproc.so.2.4.11
 image_negative_util: /usr/local/lib/libopencv_highgui.so.2.4.11
-image_negative_util: /usr/local/lib/libopencv_gpu.so.2.4.11
 image_negative_util: /usr/local/lib/libopencv_flann.so.2.4.11
 image_negative_util: /usr/local/lib/libopencv_features2d.so.2.4.11
 image_negative_util: /usr/local/lib/libopencv_core.so.2.4.11
@@ -105,11 +104,8 @@ image_negative_util: /usr/local/lib/libopencv_contrib.so.2.4.11
 image_negative_util: /usr/local/lib/libopencv_calib3d.so.2.4.11
 image_negative_util: /usr/local/lib/libopencv_nonfree.so.2.4.11
 image_negative_util: /usr/local/lib/libopencv_ocl.so.2.4.11
-image_negative_util: /usr/local/lib/libopencv_gpu.so.2.4.11
-image_negative_util: /usr/local/lib/libopencv_photo.so.2.4.11
-image_negative_util: /usr/local/lib/libopencv_objdetect.so.2.4.11
-image_negative_util: /usr/local/lib/libopencv_legacy.so.2.4.11
 image_negative_util: /usr/local/lib/libopencv_video.so.2.4.11
+image_negative_util: /usr/local/lib/libopencv_objdetect.so.2.4.11
 image_negative_util: /usr/local/lib/libopencv_ml.so.2.4.11
 image_negative_util: /usr/local/lib/libopencv_calib3d.so.2.4.11
 image_negative_util: /usr/local/lib/libopencv_features2d.so.2.4.11
@@ -133,6 +129,6 @@ CMakeFiles/image_negative_util.dir/clean:
 .PHONY : CMakeFiles/image_negative_util.dir/clean
 
 CMakeFiles/image_negative_util.dir/depend:
-	cd /home/jeff/Jeff/Image_Negative/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jeff/Jeff/Image_Negative /home/jeff/Jeff/Image_Negative /home/jeff/Jeff/Image_Negative/build /home/jeff/Jeff/Image_Negative/build /home/jeff/Jeff/Image_Negative/build/CMakeFiles/image_negative_util.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/goddess/workspace/image_negative/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/goddess/workspace/image_negative /home/goddess/workspace/image_negative /home/goddess/workspace/image_negative/build /home/goddess/workspace/image_negative/build /home/goddess/workspace/image_negative/build/CMakeFiles/image_negative_util.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/image_negative_util.dir/depend
 

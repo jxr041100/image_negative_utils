@@ -2,8 +2,8 @@ import os
 import re
 
 from subprocess import call
-inputpath = '/home/jeff/data/car/neg'
-filename_prefix ='non_car'
+inputpath = '/home/goddess/workspace/data/ADAS_DEMO/neg/'
+filename_prefix ='non_adas'
 
 
 

@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/jeff/Jeff/Image_Negative/main.cpp
+/home/goddess/workspace/image_negative/main.cpp
 opencv2/objdetect/objdetect.hpp
-/home/jeff/Jeff/Image_Negative/opencv2/objdetect/objdetect.hpp
+/home/goddess/workspace/image_negative/opencv2/objdetect/objdetect.hpp
 opencv2/highgui/highgui.hpp
-/home/jeff/Jeff/Image_Negative/opencv2/highgui/highgui.hpp
+/home/goddess/workspace/image_negative/opencv2/highgui/highgui.hpp
 opencv2/imgproc/imgproc.hpp
-/home/jeff/Jeff/Image_Negative/opencv2/imgproc/imgproc.hpp
+/home/goddess/workspace/image_negative/opencv2/imgproc/imgproc.hpp
 iostream
 -
 fstream

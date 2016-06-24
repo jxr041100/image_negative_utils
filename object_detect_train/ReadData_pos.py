@@ -5,8 +5,8 @@ import re
 
 import Image
 from subprocess import call
-inputpath = '/home/jeff/data/car/pos'
-filename_prefix ='car'
+inputpath = '/home/goddess/workspace/data/ADAS_DEMO/Pos/'
+filename_prefix ='adas'
 
 def get_image_size(fname):
 	IM=Image.open(fname)

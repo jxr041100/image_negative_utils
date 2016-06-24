@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jeff/Jeff/Image_Negative/main.cpp" "/home/jeff/Jeff/Image_Negative/build/CMakeFiles/image_negative_util.dir/main.cpp.o"
+  "/home/goddess/workspace/image_negative/main.cpp" "/home/goddess/workspace/image_negative/build/CMakeFiles/image_negative_util.dir/main.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
